@@ -1,0 +1,34 @@
+mixin nav-content()
+  ul
+    li: a.visible(href='#about').active About
+    li: a.visible(href='#technologies') Technologies
+    li: a.visible(href='#portfolio') Portfolio
+    li: a.logo(href='#')
+    li: a.visible(href='#production') Production
+    li: a.visible(href='#setup') Setup
+    li: a.visible(href='#contact') Contact
+
+doctype html
+
+html
+  title Michael Diglio | Front-End Developer & Gamer
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='main.css')
+  
+  //page wrapper 
+  .home-wrap
+    header
+      nav.site-nav
+        +nav-content
+    //home-sections wrapper    
+    .home-sections
+      section.about
+      section.technologies
+      section.portfolio
+      section.production
+      section.setup
+      section.contact
+      
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="../assets/js/functions-min.js"></script>        

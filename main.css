@@ -1,0 +1,44 @@
+header {
+  display: grid;
+  justify-content: center;
+  height: 125px;
+  width: 100vw;
+  position: fixed;
+  background-color: #cccccc; }
+  header .site-nav ul {
+    list-style: none;
+    padding: 0; }
+    header .site-nav ul li {
+      display: inline-grid;
+      font-size: 16px;
+      padding: 0 20px; }
+      header .site-nav ul li a {
+        text-decoration: none;
+        color: black; }
+      header .site-nav ul li .logo {
+        background-image: url(assets/img/logo2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: 15px;
+        transform: scale(2); }
+
+.animateNav {
+  opacity: 0;
+  transition: all 500ms ease-in-out; }
+
+.visible {
+  opacity: 1;
+  transition: all 500ms ease-in-out; }
+
+html body {
+  margin: 0;
+  padding: 0; }
+
+section {
+  display: grid;
+  width: 100vw;
+  height: 500px; }
