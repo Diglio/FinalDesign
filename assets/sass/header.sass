@@ -4,17 +4,18 @@ header
   height: 125px
   width: 100vw
   position: fixed
+  top: 0
+  z-index: 100
   background:
-    color: #cccccc
+    color: #969696
 
   .site-nav
     ul
       list-style: none
-      padding: 0
 
       li
         display: inline-grid
-        font-size: 16px
+        font-size: 20px
         padding: 0 20px
 
         a
@@ -35,8 +36,12 @@ header
 
 .animateNav
   opacity: 0
+  pointer-events: none
   transition: all 500ms ease-in-out
 
 .visible
   opacity: 1
   transition: all 500ms ease-in-out
+
+.active
+  border-bottom: 2px solid red

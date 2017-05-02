@@ -35,6 +35,26 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/img\/circuit-galaxy.jpeg": {
+		"ft": 16384,
+		"iS": 607982,
+		"oA": 0,
+		"oAP": "\/assets\/img\/circuit-galaxy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/css3-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/img\/css3-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/img\/facebook-logo.png": {
 		"ft": 32768,
 		"iS": 25236,
@@ -68,6 +88,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/HTML5-logo.png": {
+		"ft": 32768,
+		"iS": 8562,
+		"oA": 0,
+		"oAP": "\/assets\/img\/HTML5-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/inAHat.png": {
 		"ft": 32768,
 		"iS": 461648,
@@ -79,11 +110,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/assets\/img\/javascript-logo.png": {
+		"ft": 32768,
+		"iS": 27814,
+		"oA": 0,
+		"oAP": "\/assets\/img\/javascript-logo.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/logo2.png": {
 		"ft": 32768,
 		"iS": 23489,
 		"oA": 0,
 		"oAP": "\/assets\/img\/logo2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/responsive-logo.png": {
+		"ft": 32768,
+		"iS": 5296,
+		"oA": 0,
+		"oAP": "\/assets\/img\/responsive-logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -111,6 +164,59 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/assets\/img\/skills-background.jpeg": {
+		"ft": 16384,
+		"iS": 37286,
+		"oA": 0,
+		"oAP": "\/assets\/img\/skills-background.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/skills-background.png": {
+		"ft": 32768,
+		"iS": 1279987,
+		"oA": 0,
+		"oAP": "\/assets\/img\/skills-background.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/steven-bachan.jpg": {
+		"ft": 16384,
+		"iS": 171344,
+		"oA": 0,
+		"oAP": "\/assets\/img\/steven-bachan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/img\/techbytes-logo.png": {
+		"ft": 32768,
+		"iS": 91335,
+		"oA": 0,
+		"oAP": "\/assets\/img\/techbytes-logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/img\/techbytes-logo@2x.png": {
+		"ft": 32768,
+		"iS": 315054,
+		"oA": 0,
+		"oAP": "\/assets\/img\/techbytes-logo@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/img\/twitter-logo.gif": {
 		"ft": 4194304,
 		"iS": 7699,
@@ -118,6 +224,15 @@
 		"oAP": "\/assets\/img\/twitter-logo.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/assets\/js\/functions-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/functions-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/assets\/js\/functions.js": {
 		"ft": 64,
@@ -127,6 +242,32 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/assets\/sass\/about.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/about.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/contact.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/contact.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"\/assets\/sass\/header.sass": {
 		"aP": 0,
@@ -151,6 +292,58 @@
 		"oA": 0,
 		"oAP": "\/main.css",
 		"oF": 2,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/portfolio.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/portfolio.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/production.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/production.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/setup.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/setup.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/sass\/technologies.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/sass\/technologies.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},

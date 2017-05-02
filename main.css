@@ -4,13 +4,14 @@ header {
   height: 125px;
   width: 100vw;
   position: fixed;
-  background-color: #cccccc; }
+  top: 0;
+  z-index: 100;
+  background-color: #969696; }
   header .site-nav ul {
-    list-style: none;
-    padding: 0; }
+    list-style: none; }
     header .site-nav ul li {
       display: inline-grid;
-      font-size: 16px;
+      font-size: 20px;
       padding: 0 20px; }
       header .site-nav ul li a {
         text-decoration: none;
@@ -28,17 +29,258 @@ header {
 
 .animateNav {
   opacity: 0;
+  pointer-events: none;
   transition: all 500ms ease-in-out; }
 
 .visible {
   opacity: 1;
   transition: all 500ms ease-in-out; }
 
+.active {
+  border-bottom: 2px solid red; }
+
+section.about {
+  grid-column: 1 / 12;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center; }
+  section.about .mikePicture {
+    background-image: url(assets/img/inAHat.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 200px; }
+
+section.technologies {
+  grid-column: 1 / 12;
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: white; }
+  section.technologies hr {
+    height: 1px;
+    border: 0;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black)); }
+  section.technologies h2 {
+    grid-row: 1;
+    grid-column: 1 / 4; }
+  section.technologies .htmlLogo {
+    background-image: url(assets/img/HTML5-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20vw;
+    height: 20vh;
+    border-right: 2px solid #cccccc; }
+  section.technologies .cssLogo {
+    background-image: url(assets/img/css3-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20vw;
+    height: 20vh;
+    border-right: 2px solid #cccccc; }
+  section.technologies .javascriptLogo {
+    background-image: url(/assets/img/javascript-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20vw;
+    height: 20vh;
+    border-right: 2px solid #cccccc; }
+  section.technologies .flipRespond {
+    height: 20vw;
+    width: 100%;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-right: 2px solid #cccccc; }
+    section.technologies .flipRespond .responsiveLogo {
+      background-image: url(/assets/img/responsive-logo.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 15vw;
+      height: 15vh;
+      perspective: 1000px;
+      transition: all 500ms ease-in-out;
+      transform: rotateX(0deg);
+      transform-origin: bottom;
+      backface-visibility: hidden;
+      grid-row: 1;
+      grid-column: 1;
+      opacity: 1; }
+    section.technologies .flipRespond form {
+      transition: all 500ms ease-in-out;
+      transform: rotateX(-180deg);
+      transform-origin: top;
+      backface-visibility: hidden;
+      grid-row: 1;
+      grid-column: 1;
+      text-align: left;
+      opacity: 0; }
+  section.technologies .flipRespond:hover .responsiveLogo {
+    transform: rotateX(180deg);
+    opacity: 0; }
+  section.technologies .flipRespond:hover form {
+    transform: rotateX(0deg);
+    opacity: 1; }
+  section.technologies .placeHolder {
+    background-color: blue;
+    width: 200px;
+    height: 200px; }
+
+section.portfolio {
+  grid-column: 1 / 12;
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  grid-gap: 20px;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  section.portfolio h2 {
+    grid-column: 1 / 4;
+    grid-row: 1; }
+  section.portfolio .placeHolder {
+    position: relative;
+    width: 200px;
+    height: 115.47px;
+    background-color: red;
+    margin: 57.74px 0; }
+  section.portfolio .placeHolder:before,
+  section.portfolio .placeHolder:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent; }
+  section.portfolio .placeHolder:before {
+    bottom: 100%;
+    border-bottom: 57.74px solid red; }
+  section.portfolio .placeHolder:after {
+    top: 100%;
+    width: 0;
+    border-top: 57.74px solid red; }
+  section.portfolio .techbytes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    background-image: url(assets/img/techbytes-logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+    section.portfolio .techbytes .text-container {
+      overflow: hidden;
+      transition: all 500ms ease-in-out; }
+      section.portfolio .techbytes .text-container h3 {
+        transition: all 500ms ease-in-out;
+        transform: translateY(150px); }
+      section.portfolio .techbytes .text-container p {
+        transition: all 500ms ease-in-out;
+        transform: translateY(150px); }
+  section.portfolio .techbytes:hover .text-container {
+    background-color: white; }
+    section.portfolio .techbytes:hover .text-container h3 {
+      transform: translateY(0); }
+    section.portfolio .techbytes:hover .text-container p {
+      transform: translateY(0); }
+  section.portfolio .circuitGalaxy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    background-image: url(assets/img/circuit-galaxy.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+    section.portfolio .circuitGalaxy .text-container {
+      overflow: hidden;
+      transition: all 500ms ease-in-out; }
+      section.portfolio .circuitGalaxy .text-container h3 {
+        transition: all 500ms ease-in-out;
+        transform: translateY(150px); }
+      section.portfolio .circuitGalaxy .text-container p {
+        transition: all 500ms ease-in-out;
+        transform: translateY(150px); }
+  section.portfolio .circuitGalaxy:hover .text-container {
+    background-color: white; }
+    section.portfolio .circuitGalaxy:hover .text-container h3 {
+      transform: translateY(0); }
+    section.portfolio .circuitGalaxy:hover .text-container p {
+      transform: translateY(0); }
+  section.portfolio .stevenBachan {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    background-image: url(assets/img/steven-bachan.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+    section.portfolio .stevenBachan .text-container {
+      overflow: hidden;
+      transition: all 500ms ease-in-out; }
+      section.portfolio .stevenBachan .text-container h3 {
+        transition: all 500ms ease-in-out;
+        transform: translateY(150px); }
+      section.portfolio .stevenBachan .text-container p {
+        transition: all 500ms ease-in-out;
+        transform: translateY(150px); }
+  section.portfolio .stevenBachan:hover .text-container {
+    background-color: white; }
+    section.portfolio .stevenBachan:hover .text-container h3 {
+      transform: translateY(0); }
+    section.portfolio .stevenBachan:hover .text-container p {
+      transform: translateY(0); }
+
+section.production {
+  grid-column: 1 / 12;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  background-color: white; }
+  section.production .placeHolder {
+    background-color: purple;
+    width: 600px;
+    height: 600px; }
+
+section.setup {
+  grid-column: 1 / 12; }
+
+section.contact {
+  grid-column: 1 / 12; }
+
 html body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 section {
   display: grid;
-  width: 100vw;
-  height: 500px; }
+  width: 99.1vw;
+  height: auto;
+  margin: 20px 0; }
+
+.home-sections {
+  margin-top: 125px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  background-color: #cccccc; }

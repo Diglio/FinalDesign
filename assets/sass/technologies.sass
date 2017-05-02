@@ -1,0 +1,103 @@
+section.technologies
+  grid-column: 1 / 12
+  display: grid
+  grid-template-columns: repeat(3, 20vw)
+  //grid-template-rows: repeat(3, 1fr)
+  //grid-gap: 5px
+  justify-items: center
+  justify-content: center
+  align-items: center
+  align-content: center
+  background-color: white
+
+  hr
+    height: 1px
+    border: 0
+    background: black
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black))
+
+
+  h2
+    grid-row: 1
+    grid-column: 1 / 4
+
+  .htmlLogo
+    background:
+      image: url(assets/img/HTML5-logo.png)
+      repeat: no-repeat
+      position: center
+      size: contain
+    width: 20vw
+    height: 20vh
+    border-right: 2px solid #cccccc
+
+  .cssLogo
+    background:
+      image: url(assets/img/css3-logo.svg)
+      repeat: no-repeat
+      position: center
+      size: contain
+    width: 20vw
+    height: 20vh
+    border-right: 2px solid #cccccc
+
+  .javascriptLogo
+    background:
+      image: url(/assets/img/javascript-logo.png)
+      repeat: no-repeat
+      position: center
+      size: contain
+    width: 20vw
+    height: 20vh
+    border-right: 2px solid #cccccc
+
+  .flipRespond
+    height: 20vw
+    width: 100%
+    position: relative
+    display: grid
+    justify-items: center
+    align-items: center
+    border-right: 2px solid #cccccc
+
+    .responsiveLogo
+      background:
+        image: url(/assets/img/responsive-logo.png)
+        repeat: no-repeat
+        position: center
+        size: contain
+      width: 15vw
+      height: 15vh
+      perspective: 1000px
+      transition: all 500ms ease-in-out
+      transform: rotateX(0deg)
+      transform-origin: bottom
+      backface-visibility: hidden
+      grid-row: 1
+      grid-column: 1
+      opacity: 1
+
+    form
+      transition: all 500ms ease-in-out
+      transform: rotateX(-180deg)
+      transform-origin: top
+      backface-visibility: hidden
+      grid-row: 1
+      grid-column: 1
+      text-align: left
+      opacity: 0
+
+  .flipRespond:hover
+    .responsiveLogo
+      transform: rotateX(180deg)
+      opacity: 0
+
+    form
+      transform: rotateX(0deg)
+      opacity: 1
+
+  .placeHolder
+    background:
+      color: blue
+    width: 200px
+    height: 200px

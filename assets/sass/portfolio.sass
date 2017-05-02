@@ -1,0 +1,135 @@
+section.portfolio
+  grid-column: 1 / 12
+  display: grid
+  grid-template-columns: repeat(3, 20vw)
+  //grid-template-rows: repeat(2, 1fr)
+  grid-gap: 20px
+  justify-items: center
+  justify-content: center
+  align-items: center
+  align-content: center
+
+  h2
+    grid-column: 1 / 4
+    grid-row: 1
+
+
+  .placeHolder
+    position: relative
+    width: 200px
+    height: 115.47px
+    background-color: red
+    margin: 57.74px 0
+
+  .placeHolder:before,
+  .placeHolder:after
+    content: ""
+    position: absolute
+    width: 0
+    border-left: 100px solid transparent
+    border-right: 100px solid transparent
+
+  .placeHolder:before
+    bottom: 100%
+    border-bottom: 57.74px solid red
+
+  .placeHolder:after
+    top: 100%
+    width: 0
+    border-top: 57.74px solid red
+
+  //Techbytes Section
+  .techbytes
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    text-align: center
+    background:
+      image: url(assets/img/techbytes-logo.png)
+      size: contain
+      position: center
+      repeat: no-repeat
+
+    .text-container
+      overflow: hidden
+      transition: all 500ms ease-in-out
+
+      h3
+        transition: all 500ms ease-in-out
+        transform: translateY(150px)
+      p
+        transition: all 500ms ease-in-out
+        transform: translateY(150px)
+
+  .techbytes:hover
+    .text-container
+      background-color: white
+      h3
+        transform: translateY(0)
+      p
+        transform: translateY(0)
+
+  //Circuit Galaxy Section
+  .circuitGalaxy
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    text-align: center
+    background:
+      image: url(assets/img/circuit-galaxy.jpeg)
+      size: contain
+      position: center
+      repeat: no-repeat
+
+    .text-container
+      overflow: hidden
+      transition: all 500ms ease-in-out
+
+      h3
+        transition: all 500ms ease-in-out
+        transform: translateY(150px)
+      p
+        transition: all 500ms ease-in-out
+        transform: translateY(150px)
+
+  .circuitGalaxy:hover
+    .text-container
+      background-color: rgba(255,255,255,1.0)
+      h3
+        transform: translateY(0)
+      p
+        transform: translateY(0)
+
+  //Steven Bachan Section
+  .stevenBachan
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    text-align: center
+    background:
+      image: url(assets/img/steven-bachan.jpg)
+      size: contain
+      position: center
+      repeat: no-repeat
+
+    .text-container
+      overflow: hidden
+      transition: all 500ms ease-in-out
+
+      h3
+        transition: all 500ms ease-in-out
+        transform: translateY(150px)
+      p
+        transition: all 500ms ease-in-out
+        transform: translateY(150px)
+
+  .stevenBachan:hover
+    .text-container
+      background-color: rgba(255,255,255,1)
+      h3
+        transform: translateY(0)
+      p
+        transform: translateY(0)
